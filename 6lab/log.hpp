@@ -48,7 +48,7 @@ public:
     {
         time_t t = time(0);
         char* dt = ctime(&t);
-        if (m_logLevel == LogLevel::DEBUG)
+        if (m_logLevel == LogLevel::RELEASE)
         {
             m_a = GetStdHandle(STD_OUTPUT_HANDLE);
             SetConsoleTextAttribute(m_a, 1);
