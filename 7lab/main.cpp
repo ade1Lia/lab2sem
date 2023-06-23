@@ -53,7 +53,13 @@ public:
 
 int main()
 {
-    std::vector <int> v ={3,4,5};
-    Triangle f("Green", &v,12,13);
-    f.GetArea();
+    std::vector<int> t = {4, 3, 5};
+    Fig* treug = new Triangle("Blue", &t, 12, 13);
+    std::vector<int> p = {2, 8};
+    Fig* pram = new Rectangle("Pink", &p, -1, 8);
+    std::vector<int> k = {6};
+    Fig* krug = new Circle("Green", &k, 9, 0);
+    std::cout << treug->GetArea() << "\n";
+    std::cout << pram->GetArea() << "\n";
+    std::cout << krug->GetArea() << "\n";
 }
